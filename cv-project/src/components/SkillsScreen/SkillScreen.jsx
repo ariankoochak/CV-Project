@@ -7,11 +7,10 @@ import ReactIcon from "../Svgs/ReactIcon/ReactIcon";
 import SqlIcon from "../Svgs/SqlIcon/SqlIcon";
 import SwiftIcon from "../Svgs/SwiftIcon/SwiftIcon";
 import styleModule from "./skillScreenStyle.module.css";
-
 export default function SkillScreen() {
     return (
         <div className="SkillsScreen">
-            <h1 className={styleModule.titleFontSize}>Skills</h1>
+            <h1 className={`${styleModule.titleFontSize} ${styleModule.titleColor}`}>Skills</h1>
             <div>
                 <div className={styleModule.skillStyle}>
                     <CppIcon width="100" />

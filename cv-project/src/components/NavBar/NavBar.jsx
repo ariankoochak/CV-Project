@@ -12,6 +12,9 @@ export default function NavBar(props) {
             case 'Skills':
                 props.navigate("Skills");
                 break;
+            case 'Home':
+                props.navigate("Home");
+                break;
             default:
                 console.log('changing theme');
         }
@@ -21,8 +24,9 @@ export default function NavBar(props) {
           <button onClick={handleClick}>
               <ThemeIcon fill='white'/>
           </button>
-          <button onClick={handleClick} className={styleModule.toRightSide}>About</button>
-          <button onClick={handleClick} className={styleModule.toRightSide}>Skills</button>
+          <button onClick={handleClick} className={`${styleModule.toRightSide} ${styleModule.buttonColor}`}>Home</button>
+          <button onClick={handleClick} className={`${styleModule.toRightSide} ${styleModule.buttonColor}`}>About</button>
+          <button onClick={handleClick} className={`${styleModule.toRightSide} ${styleModule.buttonColor}`}>Skills</button>
       </div>
   );
 }
