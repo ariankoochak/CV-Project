@@ -2,13 +2,15 @@ import React from 'react'
 import styleModule from './navbarStyle.module.css'
 import ThemeIcon from '../Svgs/ThemeIcon/ThemeIcon';
 
-export default function NavBar() {
+export default function NavBar(props) {
     const handleClick = (e)=>{
         const btn = e.target.textContent;
         switch (btn){
             case 'About':
+                props.navigate('About')
                 break;
             case 'Skills':
+                props.navigate("Skills");
                 break;
             default:
                 console.log('changing theme');
