@@ -20,9 +20,6 @@ body {
     text-decoration: rtl;
     font-size: 20px;
 }
-.navbar button:hover {
-    color: black;
-}
 .HomeScreen {
     /* height: calc(100vh - 56px); */
     height: 100vh;
