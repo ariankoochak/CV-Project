@@ -45,6 +45,10 @@ export default function NavBar(props) {
                         backColor: "#3a3238",
                         textColor: "#f5e3e0",
                     },
+                    {
+                        backColor: "#e5383b",
+                        textColor: "#660708",
+                    },
                 ];
                 props.changeTheme(Themes[Math.floor(Math.random()*Themes.length)])
         }
